@@ -27,7 +27,6 @@
     margin-bottom: 30px;
   }
 
-  /* ? Increased 1.5× */
   .section-title {
     text-align: center;
     font-size: 27px;
@@ -39,6 +38,13 @@
   .grid {
     display: grid;
     grid-template-columns: 160px 160px;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
     gap: 25px;
     justify-content: center;
   }
@@ -114,7 +120,8 @@
   <!-- Section 2 -->
   <div class="section">
     <div class="section-title">Case Listing in High Court</div>
-    <div class="grid">
+
+    <div class="grid-3">
 
       <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/12/')">
         <div class="icon">
@@ -128,6 +135,13 @@
           <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
         </div>
         <div class="label">Mind Maps for HC Case Listing</div>
+      </div>
+
+      <div class="tile" onclick="go('https://drive.google.com/file/d/1Pvh2lZtj9tq0N8SbocHoLP3HDEapOXeu/view?usp=sharing')">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png">
+        </div>
+        <div class="label">RTI Compilation on Case Listing</div>
       </div>
 
     </div>
