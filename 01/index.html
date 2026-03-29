@@ -23,10 +23,22 @@
     padding: 25px;
   }
 
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 160px);
+    grid-template-columns: 160px 160px;
     gap: 25px;
+    justify-content: center;
   }
 
   .tile {
@@ -87,23 +99,35 @@
 
 <div class="workspace">
 
-  <div class="grid">
+  <!-- Row 1 Section -->
+  <div class="section">
+    <div class="section-title">RTIs and Responses</div>
+    <div class="grid">
 
-    <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/11/')">
-      <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"></div>
-      <div class="label">RTI Tracker</div>
+      <div class="tile" style="grid-column: 1 / span 2;" onclick="go('https://mathewthomasfiles.github.io/Rti/11/')">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"></div>
+        <div class="label">RTI Tracker</div>
+      </div>
+
     </div>
+  </div>
 
-    <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/12/')">
-      <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"></div>
-      <div class="label">HC Case on Case Listing</div>
+  <!-- Row 2 Section -->
+  <div class="section">
+    <div class="section-title">Case Listing in High Court</div>
+    <div class="grid">
+
+      <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/12/')">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"></div>
+        <div class="label">HC Case on Case Listing</div>
+      </div>
+
+      <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/13/')">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"></div>
+        <div class="label">Mind Maps for HC Case Listing</div>
+      </div>
+
     </div>
-
-    <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/13/')">
-      <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"></div>
-      <div class="label">Mind Maps for HC Case Listing</div>
-    </div>
-
   </div>
 
 </div>
