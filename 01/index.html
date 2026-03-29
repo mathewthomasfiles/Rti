@@ -23,23 +23,20 @@
     padding: 25px;
   }
 
-  /* Section divider */
   .section {
     margin-bottom: 30px;
-    padding-bottom: 20px;
   }
 
-  /* Lotus Notes style tab heading */
+  /* ? Increased 1.5× */
   .section-title {
     text-align: center;
-    font-size: 18px;
+    font-size: 27px;
     font-weight: bold;
     margin: 10px 0 15px 0;
     color: #333;
   }
 
   .grid {
-    margin-top: 10px;
     display: grid;
     grid-template-columns: 160px 160px;
     gap: 25px;
@@ -54,15 +51,6 @@
     box-shadow: 5px 5px 6px rgba(0,0,0,0.35);
     position: relative;
     cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .tile:hover {
-    transform: translateY(-3px);
-  }
-
-  .tile:active {
-    box-shadow: inset 2px 2px 4px rgba(0,0,0,0.3);
   }
 
   .icon {
@@ -84,18 +72,13 @@
     left: 10px;
     right: 10px;
     font-size: 20px;
-    line-height: 1.2;
   }
 
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #ece9d8;
-    border-top: 1px solid #aaa;
-    padding: 4px 10px;
-    font-size: 12px;
+  .divider {
+    border-top: 1px solid #a0a0a0;
+    margin: 20px 0;
   }
+
 </style>
 </head>
 <body>
@@ -106,37 +89,51 @@
 
   <!-- Section 1 -->
   <div class="section">
-    <div class="section-title" >RTIs and Responses</div>
-    <div class="grid" id="sec1">
+    <div class="section-title">RTIs and Responses</div>
+    <div class="grid">
 
-      <div class="tile" style="grid-column: 1 / span 2;" onclick="go('https://mathewthomasfiles.github.io/Rti/11/')">
-        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"></div>
+      <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/11/')">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png">
+        </div>
         <div class="label">RTI Tracker</div>
+      </div>
+
+      <div class="tile" onclick="go('https://calendar.google.com/calendar/u/0?cid=bWF0aGV3dGhvbWFzYWFkaGFhckBnbWFpbC5jb20')">
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png">
+        </div>
+        <div class="label">RTI & Events Calender</div>
       </div>
 
     </div>
   </div>
 
-    <div style="border-top: 1px solid #a0a0a0; margin: 20px 0;"></div>
+  <div class="divider"></div>
 
   <!-- Section 2 -->
   <div class="section">
-    <div class="section-title" >Case Listing in High Court</div>
-    <div class="grid" id="sec2">
+    <div class="section-title">Case Listing in High Court</div>
+    <div class="grid">
 
       <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/12/')">
-        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"></div>
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png">
+        </div>
         <div class="label">HC Case on Case Listing</div>
       </div>
 
       <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/13/')">
-        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"></div>
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+        </div>
         <div class="label">Mind Maps for HC Case Listing</div>
       </div>
 
     </div>
-      <!-- Divider between Section 2 and 3 -->
-  <div style="border-top: 1px solid #a0a0a0; margin: 20px 0;"></div>
+  </div>
+
+  <div class="divider"></div>
 
   <!-- Section 3 -->
   <div class="section">
@@ -144,7 +141,9 @@
     <div class="grid">
 
       <div class="tile" style="grid-column: 1 / span 2;" onclick="go('https://mathewthomasfiles.github.io/Rti/14/')">
-        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png"></div>
+        <div class="icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/564/564619.png">
+        </div>
         <div class="label">Top 16 Frauds Using AADHAAR</div>
       </div>
 
@@ -153,13 +152,10 @@
 
 </div>
 
-<div class="footer">Notes configuration settings have been refreshed</div>
-
 <script>
 function go(url){
   window.location.href = url;
 }
-
 </script>
 
 </body>
