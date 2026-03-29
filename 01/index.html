@@ -23,18 +23,23 @@
     padding: 25px;
   }
 
+  /* Section divider */
   .section {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
   }
 
+  /* Lotus Notes style tab heading */
   .section-title {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin: 10px 0 15px 0;
+    color: #333;
   }
 
   .grid {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 160px 160px;
     gap: 25px;
@@ -99,10 +104,10 @@
 
 <div class="workspace">
 
-  <!-- Row 1 Section -->
+  <!-- Section 1 -->
   <div class="section">
-    <div class="section-title">RTIs and Responses</div>
-    <div class="grid">
+    <div class="section-title" >RTIs and Responses</div>
+    <div class="grid" id="sec1">
 
       <div class="tile" style="grid-column: 1 / span 2;" onclick="go('https://mathewthomasfiles.github.io/Rti/11/')">
         <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png"></div>
@@ -112,10 +117,12 @@
     </div>
   </div>
 
-  <!-- Row 2 Section -->
+    <div style="border-top: 1px solid #a0a0a0; margin: 20px 0;"></div>
+
+  <!-- Section 2 -->
   <div class="section">
-    <div class="section-title">Case Listing in High Court</div>
-    <div class="grid">
+    <div class="section-title" >Case Listing in High Court</div>
+    <div class="grid" id="sec2">
 
       <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/12/')">
         <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"></div>
@@ -125,6 +132,20 @@
       <div class="tile" onclick="go('https://mathewthomasfiles.github.io/Rti/13/')">
         <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"></div>
         <div class="label">Mind Maps for HC Case Listing</div>
+      </div>
+
+    </div>
+      <!-- Divider between Section 2 and 3 -->
+  <div style="border-top: 1px solid #a0a0a0; margin: 20px 0;"></div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <div class="section-title">AADHAAR and UIDAI</div>
+    <div class="grid">
+
+      <div class="tile" style="grid-column: 1 / span 2;" onclick="go('https://mathewthomasfiles.github.io/Rti/14/')">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png"></div>
+        <div class="label">Top 16 Frauds Using AADHAAR</div>
       </div>
 
     </div>
@@ -138,6 +159,7 @@
 function go(url){
   window.location.href = url;
 }
+
 </script>
 
 </body>
